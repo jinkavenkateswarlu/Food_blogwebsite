@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* Add styles to the form container */
+.container {
+  margin-left: 550px;
+  margin-top: 150px;
+  position: absolute;
+  max-width: 300px;
+
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus{
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+.bg-img {
+  /* The image used */
+  background-image: url("https://img.freepik.com/premium-photo/bay-leaf-black-pepper-black-background-condiments-flat-view-space-text_350891-622.jpg?size=626&ext=jpg&ga=GA1.1.1140799563.1711526251&semt=sph");
+
+  min-height: 700px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  position: relative;
+  border:none;
+}
+form {
+  text-align: center;
+}
+</style>
+</head>
+<body style="background-image: url('https://static.vecteezy.com/system/resources/thumbnails/000/676/573/small/green-gradient-plane-background.jpg')">
+  <h2>Food-Login</h2>
+<div class="bg-img">
+  <div class="container">
+  <form action="" method="POST">
+    <h1 style="color: red;">Login</h1>
+
+    <label for="email" style="color: blue;"><b>username</b></label>
+    <input type="text" placeholder="Enter Username" name="username" id="username" required>
+
+    <label for="psw" style="color:#04AA6D"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" id="password" required>
+
+    <button type="submit" class="btn">Login</button>
+  </form>
+</div>
+</div>
+
+</body>
+</html>

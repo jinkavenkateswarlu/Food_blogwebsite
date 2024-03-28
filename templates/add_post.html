@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            margin: 40px auto;
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            background-color:none;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+        
+        .bg-img {
+  /* The image used */
+  background-image: url("https://img.freepik.com/premium-photo/bay-leaf-black-pepper-black-background-condiments-flat-view-space-text_350891-622.jpg?size=626&ext=jpg&ga=GA1.1.1140799563.1711526251&semt=sph");
+
+  min-height: 700px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+        }
+    </style>
+</head>
+<body bgcolor="blue">
+    <div class="bg-img">
+    <h1 style="color:red"><center>Add Post</center></h1>
+    <form action="" method="POST">
+        <label for="title" style="color:blue"><h3><u><b>Title</b></u></h3></label>
+        <input type="text" id="title" name="title">
+
+        <label for="content" style="color:#0056b3"><h3><u><b>Content</b></u></h3></label>
+        <input type="text" id="content" name="content">
+
+        <label for="slug" style="color: darkmagenta;"><h3><u><b>Slug</b></u></h3></label>
+        <input type="text" id="slug" name="slug">
+
+        <button type="submit">Submit</button>
+    </form>
+    </div>
+</body>
+</html>
